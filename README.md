@@ -1,6 +1,14 @@
 # GIS_bash_script
-## Extent Extraction of Polygons
-### by Landung Setiawan 3/11/2016 
+# by Landung Setiawan
+The bash scripts contained in this repository is used for either raster or vector manipulation. It is an automated process specific for MODIS(EVI) and Delaware River Basin study area. 
+
+The scripts are dependant on a list of packages:
+* GDAL/OGR
+* pyModis
+* python 2.7
+
+## Extent.sh
+The purpose of this script is to extract the bounding box of polygons contained within the Delaware River Basin HUC8 Polygon. These polygons are used for the [Christina River Basin] (http://viz.criticalzone.org/Christina) Project.
 
 ```Bash
 Ogr2ogr reprojection
