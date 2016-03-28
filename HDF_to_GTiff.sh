@@ -16,13 +16,13 @@ getArray() {
 			dates+=("$line"); # Append line to the array
 		done < "$1" ;
 	}
-getArray "date_list_fol_copy.txt"
+getArray "date_list_fol.txt"
 
 dates1=(); # Create array 
 while IFS= read -r line # Read a line
 	do
 		dates1+=("$line"); # Append line to the array
-	done < "date_list_d_copy.txt" 
+	done < "date_list_d.txt" 
 
 mkdir ./MOD13A2.006
 for date in ${!dates[@]}
